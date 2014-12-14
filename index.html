@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="css/reveal.min.css">
         <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/presentation.css">
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -45,6 +46,80 @@
 
                 <section>
                     <h2>Quick History</h2>
+                    <ul>
+                        <li>Created by Linus Torvalds in 2005.</li>
+                        <li>Distributed Source Control</li>
+                        <li>Safeguards against corruption, malicious or accidental.</li>
+                        <li>Not be CVS</li>
+                    </ul>
+                    <aside class="notes">
+                        Git had three goals when it was created.
+                        <ul>
+                            <li>Distributed Source Control</li>
+                            <li>Safeguards against corruption, malicious or accidental.</li>
+                            <li>Not be CVS</li>
+                        </ul>
+
+                        It is named after himself like Linux is. He dubbed himself an "Egotistical basterd and name all of his projects after himself."
+                    </aside>
+                </section>
+                <section>
+                    <section>
+                        <h2>Quickstart SVN to GIT</h2>
+                        This is mostly taken from <a href="http://git-scm.com/course/svn.html">http://git-scm.com/course/svn.html</a>
+
+                        This covers command line operations and their equivalents.
+                    <aside class="notes">
+                        This may differ based on UI choice. I personally use git with command line and prefer it over GUIs.
+                    </aside>
+                    </section>
+                    <section>
+                        <h2>Starting a local repository from scratch or existing project</h2>
+                        <table>
+                            <tr>
+                                <td>git init</td>
+                                <td>svnadmin create <i>repo</i></td>
+                            </tr>
+                            <tr>
+                                <td>git clone <i>repo</i></td>
+                                <td>svn checkout <i>repo</i></td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Adding a file and committing</h2>
+                        <table>
+                            <tr>
+                                <td>git add <i>filename</i></td>
+                                <td>svn import <i>file://repo</i></td>
+                            </tr>
+                            <tr>
+                                <td>git commit<br>
+                                git push</td>
+                                <td>svn commit</td>
+                            </tr>
+                        </table>
+                    <aside class="notes">
+                        Committing in git and svn are different. A commit in git only pushes the change to your local repository, which you already have anyway. A push shares your commit to whatever remote branch you have tracking your branch.
+                        We will get into more details about branching in a little bit.
+                    </aside>
+                    </section>
+                    <section>
+                        <h2>diff, ignore</h2>
+                        <table>
+                            <tr>
+                                <td>git diff</td>
+                                <td>svn diff | less</td>
+                            </tr>
+                        </table>
+
+                        Git diffs are handle by files.
+                        <a href="https://github.com/github/gitignore/blob/master/Java.gitignore">https://github.com/github/gitignore/blob/master/Java.gitignore</a>
+                    <aside class="notes">
+                        Committing in git and svn are different. A commit in git only pushes the change to your local repository, which you already have anyway. A push shares your commit to whatever remote branch you have tracking your branch.
+                        We will get into more details about branching in a little bit.
+                    </aside>
+                    </section>
                 </section>
             </div>
         </div>
