@@ -47,60 +47,24 @@
                 </section>
                 <section>
                     <section>
-                        <h2>Quickstart SVN to GIT</h2>
-                        This is mostly taken from <a href="http://git-scm.com/course/svn.html">http://git-scm.com/course/svn.html</a>
-
-                        This covers command line operations and their equivalents.
-                    <aside class="notes">
-                        This may differ based on UI choice. I personally use git with command line and prefer it over GUIs.
-                    </aside>
+                        <h2>git basics</h2>
+                        <ul>
+                            <li>Adding, ignoring, staging and committing.</li>
+                            <li>Branching</li>
+                            <li>Merging</li>
+                            <li>Push and pull</li>
+                            <li>Dealing with Conflicts</li>
+                        </ul>
                     </section>
                     <section>
-                        <h2>Starting a local repository from scratch or existing project</h2>
-                        <table>
-                            <tr>
-                                <td>git init</td>
-                                <td>svnadmin create <i>repo</i></td>
-                            </tr>
-                            <tr>
-                                <td>git clone <i>repo</i></td>
-                                <td>svn checkout <i>repo</i></td>
-                            </tr>
-                        </table>
-                    </section>
-                    <section>
-                        <h2>Adding a file and committing</h2>
-                        <table>
-                            <tr>
-                                <td>git add <i>filename</i></td>
-                                <td>svn import <i>file://repo</i></td>
-                            </tr>
-                            <tr>
-                                <td>git commit<br>
-                                git push</td>
-                                <td>svn commit</td>
-                            </tr>
-                        </table>
-                    <aside class="notes">
-                        Committing in git and svn are different. A commit in git only pushes the change to your local repository, which you already have anyway. A push shares your commit to whatever remote branch you have tracking your branch.
-                        We will get into more details about branching in a little bit.
-                    </aside>
-                    </section>
-                    <section>
-                        <h2>diff, ignore</h2>
-                        <table>
-                            <tr>
-                                <td>git diff</td>
-                                <td>svn diff | less</td>
-                            </tr>
-                        </table>
-
-                        Git diffs are handle by files.
-                        <a href="https://github.com/github/gitignore/blob/master/Java.gitignore">https://github.com/github/gitignore/blob/master/Java.gitignore</a>
-                    <aside class="notes">
-                        Committing in git and svn are different. A commit in git only pushes the change to your local repository, which you already have anyway. A push shares your commit to whatever remote branch you have tracking your branch.
-                        We will get into more details about branching in a little bit.
-                    </aside>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>Partial committing</li>
+                            <li>Local commits</li>
+                            <li>Pull with rebase</li>
+                            <li>Easy branch, tag, checkout, revert, cherry pick...</li>
+                            <li>Diff across branches, commits, etc.</li>
+                        </ul>
                     </section>
                 </section>
                 <section>
@@ -117,16 +81,6 @@
                         <img src="img/git-model@2x.png" class="stretch" alt="git branching model"/>
                         <br />
                         <small><a href="http://nvie.com/posts/a-successful-git-branching-model/">Source</a></small>
-                    </section>
-                    <section>
-                        <h2>git basics</h2>
-                        <ul>
-                            <li>Adding, ignoring, staging and committing.</li>
-                            <li>Branching</li>
-                            <li>Merging</li>
-                            <li>Push and pull</li>
-                            <li>Dealing with Conflicts</li>
-                        </ul>
                     </section>
                     <section>
                         <h2>Workflow</h2>
@@ -151,15 +105,6 @@
                             <li>Repeat.</li>
                         </ol>
                     </section>
-                </section>
-                <section>
-                    <h2>Features</h2>
-                    <ul>
-                        <li>Partial committing</li>
-                        <li>Local commits</li>
-                        <li>Pull with rebase</li>
-                        <li>Easy branch, tag, checkout, revert, cherry pick...</li>
-                    </ul>
                 </section>
                 <section>
                     <section>
